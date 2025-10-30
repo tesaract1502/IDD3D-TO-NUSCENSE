@@ -331,9 +331,7 @@
         </div>
 
         <div class="grid">
-            <!-- Left Column -->
             <div class="column-left">
-                <!-- Source Dataset -->
                 <div class="card">
                     <h2>Source Dataset</h2>
                     <div class="form-group">
@@ -349,7 +347,6 @@
                     </div>
                 </div>
 
-                <!-- Target Dataset -->
                 <div class="card">
                     <h2>Target Format</h2>
                     <div class="form-group">
@@ -365,7 +362,6 @@
                     </div>
                 </div>
 
-                <!-- Paths -->
                 <div class="card">
                     <h2>Paths</h2>
                     <div class="form-group">
@@ -381,9 +377,7 @@
                 </div>
             </div>
 
-            <!-- Right Column -->
             <div class="column-right">
-                <!-- Conversion Modules -->
                 <div class="card">
                     <h2>Conversion Modules</h2>
                     <div class="checkbox-group">
@@ -408,11 +402,12 @@
                                 <p>Generate sensor calibration</p>
                             </div>
                         </label>
+                        
                         <label class="checkbox-item checked">
-                            <input type="checkbox" name="conv" value="annot" checked>
+                            <input type="checkbox" name="conv" value="frame" checked>
                             <div class="checkbox-label">
-                                <p>Annotations</p>
-                                <p>Convert frame annotations</p>
+                                <p>Frames</p>
+                                <p>Generate frames.json</p>
                             </div>
                         </label>
                         <label class="checkbox-item checked">
@@ -481,7 +476,6 @@
                     <button class="button primary" id="startBtn" onclick="startConversion()" style="margin-top: 20px;">▶ Start Conversion</button>
                 </div>
 
-                <!-- Logs -->
                 <div class="card">
                     <h2>Conversion Log</h2>
                     <div class="logs" id="logsContainer">
